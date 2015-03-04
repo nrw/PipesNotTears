@@ -14,9 +14,9 @@ thinking).
 ```swift
 [4,2,3,3,3,3,1] | sorted | unique | reverse | chunk(2)  //=> [[4,3], [2,1]]
 
-[1,5,2,4,3] | sorted | last(2)  //=> [4,5]
+[1,5,2,4,3] | sorted | suffix(2)  //=> [4,5]
 
-if any([1,2,3] | shuffle | first(2), { $0 > 2 }) {
+if any([1,2,3] | shuffle | prefix(2), { $0 > 2 }) {
     println(":)")
 }
 
@@ -34,6 +34,12 @@ like this one.
 chunk(2)([1,2,3])  //=> [[1,2], [3]]
 ```
 
+Although this can be neat:
+
+```swift
+let trichunker = chunk(3)
+trichunker([1,2,3,4,5,6])  //=> [[1,2,3],[4,5,6]]
+```
 
 Is This Stable?
 ===============
