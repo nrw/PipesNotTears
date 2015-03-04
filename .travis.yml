@@ -1,1 +1,4 @@
 language: swift
+xcode_project: PipesNotTears.xcodeproj
+xcode_scheme: LeakyPipes
+xcode_sdk: iphonesimulator8.3
