@@ -1,8 +1,7 @@
 Pipes (Not Tears)
 =================
 
-Finding yourself searching for a good “Batman utility belt” framework
-for Swift projects?
+Finding yourself searching for a good Swift functional toolkit?
 
 Not really into adding extensions to `Array` because it isn’t very
 “Swifty”.
@@ -17,8 +16,8 @@ thinking).
 
 [1,5,2,4,3] | sorted | last(2)  //=> [4,5]
 
-if [1,2,3] | shuffle | first(2) | any({ $0 > 0 }) {
-    println("HI!")
+if any([1,2,3] | shuffle | first(2), { $0 > 2 }) {
+    println(":)")
 }
 
 ["key1": 1] + ["key2": 2]  //=> ["key1": 1, "key2": 2]
@@ -60,6 +59,15 @@ github "mxcl/PipesNotTears"
 ```bash
 $ carthage update
 ```
+
+
+Alternatives
+============
+
+* [Dollar.Swift](https://github.com/ankurp/Dollar.swift). The functional utility toolkit for people who want everything, then some more, then some stuff that duplicates the Swift standard library, then some stuff that only makes sense in Javascript and not Swift. And then some more again.
+* [ExSwift](https://github.com/pNre/ExSwift). More concise, but still not *that* curated.
+
+PipesNotTears is carefully made, complimenting the Swift standard library and not blindly copying what Javascript libraries do.
 
 
 Thanks
