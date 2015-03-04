@@ -1,3 +1,6 @@
+/**
+ @return A tuple of two arrays partioned based on the provided function.
+*/
 public func partition<T>(body: (T)->Bool)(_ input: [T]) -> ([T], [T]) {
     var yā = [T]()
     var nā = [T]()

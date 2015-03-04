@@ -1,5 +1,10 @@
 import Darwin
 
+/**
+ @return A new array that is shuffled.
+
+ Uses the Fisher–Yates shuffle algorithm.
+*/
 public func shuffle<T>(input: [T]) -> [T] {
     let count = input.count
     switch count {

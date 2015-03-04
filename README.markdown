@@ -13,11 +13,11 @@ thinking).
 
 
 ```swift
-[4,2,3,3,3,3,1] |> sorted |> uniq |> reverse |> chunk(2)  //=> [[4,3], [2,1]]
+[4,2,3,3,3,3,1] | sorted | unique | reverse | chunk(2)  //=> [[4,3], [2,1]]
 
-[1,5,2,4,3] |> sorted |> last(2)  //=> [4,5]
+[1,5,2,4,3] | sorted | last(2)  //=> [4,5]
 
-if [1,2,3] |> shuffle |> first(2) |> any({ $0 > 0 }) {
+if [1,2,3] | shuffle | first(2) | any({ $0 > 0 }) {
     println("HI!")
 }
 
@@ -65,7 +65,7 @@ $ carthage update
 Thanks
 ======
 
-* Thanks to [mariusschulz](https://twitter.com/mariusschulz) for the `|>` [blog post](https://blog.mariusschulz.com/2014/09/13/implementing-a-custom-forward-pipe-operator-for-function-chains-in-swift) that inspired P(NT).
+* Thanks to [mariusschulz](https://twitter.com/mariusschulz) for the `|` [blog post](https://blog.mariusschulz.com/2014/09/13/implementing-a-custom-forward-pipe-operator-for-function-chains-in-swift) that inspired P(NT).
 * Thanks to [YOLOKit](https://github.com/mxcl/YOLOKit) for inspiring the core functions a toolbelt needs.
 
 Author
