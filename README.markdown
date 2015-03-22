@@ -58,12 +58,9 @@ Getting Started
 
 Use Carthage:
 
-```ruby
-github "mxcl/PipesNotTears"
-```
-
-```bash
-$ carthage update
+```sh
+echo 'github "mxcl/PipesNotTears"' >> Cartfile
+carthage update
 ```
 
 
